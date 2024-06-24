@@ -26,14 +26,14 @@ public class StatisticsServiceTest {
 
     }
 
-@Test
+    @Test
     void textEquality() {  // text Equality - равенство текста
         Main service = new Main();
         String text = "JaCoCo";
         String expected = "JaCoCo";
         String actual = service.test(text);
         Assertions.assertEquals(expected, actual);
-}
+    }
 
     @Test
     void textNotEqual() { // textNotEqual Не равенство текста
@@ -43,7 +43,6 @@ public class StatisticsServiceTest {
         String actual = service.test(text);
         Assertions.assertEquals(expected, actual);
     }
-
 
 
 }
